@@ -47,7 +47,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="minus" catalog="system"/>
                                                 <connections>
-                                                    <action selector="onMinusPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEx-l0-sqz"/>
+                                                    <action selector="minusCountButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GJ-pv-Gb9"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tkw-F4-Gcs">
@@ -59,7 +59,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system"/>
                                                 <connections>
-                                                    <action selector="onPlusPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWy-vn-OuW"/>
+                                                    <action selector="plusCountButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uOp-rK-RV2"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -76,7 +76,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" image="clear" catalog="system" title="Очистить" imagePadding="5"/>
                                         <connections>
-                                            <action selector="onClearPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgC-TX-Nqa"/>
+                                            <action selector="clearCountButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pds-Wa-pRi"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -104,11 +104,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="clearCountBtn" destination="Uk9-v5-748" id="AfL-JT-WhG"/>
-                        <outlet property="count" destination="o3e-qg-gGE" id="c7K-y5-XJU"/>
+                        <outlet property="clearCountButton" destination="Uk9-v5-748" id="gKo-Hv-jza"/>
+                        <outlet property="countLabel" destination="o3e-qg-gGE" id="Ewl-Sw-vtP"/>
                         <outlet property="historyTextArea" destination="OL4-13-JMn" id="YAz-79-YnL"/>
-                        <outlet property="minusCountBtn" destination="kyx-BI-2Wm" id="5vX-FV-8b2"/>
-                        <outlet property="plusCountBtn" destination="Tkw-F4-Gcs" id="ibu-ve-7Ew"/>
+                        <outlet property="minusCountButton" destination="kyx-BI-2Wm" id="wir-Qe-G0i"/>
+                        <outlet property="plusCountButton" destination="Tkw-F4-Gcs" id="DEF-N8-vMS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -124,7 +124,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
